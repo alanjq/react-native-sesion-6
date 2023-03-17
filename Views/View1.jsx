@@ -1,12 +1,13 @@
 import React from 'react';
-import { Button, SafeAreaView, Text } from 'react-native';
+import { SafeAreaView, Text } from 'react-native';
+import OpenScreen from '../Components/OpenScreen';
 
-function View1() {
+function View1({ navigation }) {
 
     return (
         <SafeAreaView>
-            <Text>Navigation container</Text>
-            <Button title='Ir al Home screen' />
+            <Text>View 1</Text>
+            <OpenScreen label="Ir al home" screenName="Home" navigation={navigation} />
         </SafeAreaView>
     )
 }

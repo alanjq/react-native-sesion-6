@@ -1,17 +1,13 @@
 import React from 'react';
-import { Button, SafeAreaView, Text } from 'react-native';
+import { SafeAreaView, Text } from 'react-native';
+import OpenScreen from '../Components/OpenScreen';
 
-function Home() {
-    // Navegar a View 1
-    const handleNavigation = () => {
-        // navigation.navigate('View1')
-    }
+function Home({navigation}) {
 
     return (
         <SafeAreaView>
-            <Text>Navigation container</Text>
-
-            <Button onPress={handleNavigation} title='Volver a view 1' />
+            <Text>Home</Text>
+            <OpenScreen navigation={navigation} label="Abrir View 1" screenName="View 1" />
         </SafeAreaView>
     )
 }
